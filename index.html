@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Page App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="loginPage" class="page">
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button id="loginButton">Login</button>
+  </div>
+
+  <div id="searchPage" class="page" style="display: none">
+    <div class="container">
+      <input type="radio" name="size" id="small" checked="checked">
+      <label for="small" class="label1">
+        <span>°F</span>
+      </label>
+      <input type="radio" name="size" id="large">
+      <label for="large" class="label2">
+        <span>°C</span>
+      </label>
+    </div>
+
+    <div id="weather">
+      <input type="search" class="weather_search"
+        placeholder="Start entring city name, US zip code, Canada postal code, UK postcode, ip, metar, etc.">
+      <div class="weather_today">
+        <h1 class="weather_city"><span class="value">City</span> Weather Forecast</h1>
+        <p class="weather_state">State</p>
+      </div>
+
+      <div class="background">
+        <div class="weather_info">
+          <img src="clear-sky.png" alt="clear sky" class="weather_image">
+          <div class="weather_details">
+            <p class="current_weather"><span class="value">clear sky</span></p>
+          </div>
+          <div class="weather_temperature">
+            <p class="weather_indicator weather_indicator_wind"><span class="value">19.2</span> mph</p>
+            <p class="weather_indicator weather_indicator_precip"><span class="value">0.0</span> in</p>
+            <p class="weather_indicator weather_indicator_pressure"><span class="value">29.9</span> in</p>
+            <h2 class="weather_indicator weather_indicator_temp"><span class="value">82.4</span> &deg; f</h2>
+          </div>
+        </div>
+        <div class="weather_forecast">
+          <article class="weather_forecast_items">
+            <h3 class="weather_forecast_day">Day</h3>
+            <img src="clear-sky.png" alt="clear sky" class="weather_forecast_icon">
+            <p class="weather_forecast_tempareture"><span class="value">82.4</span> &deg;f</p>
+          </article>
+
+          <article class="weather_forecast_items">
+            <h3 class="weather_forecast_day">Day</h3>
+            <img src="clear-sky.png" alt="clear sky" class="weather_forecast_icon">
+            <p class="weather_forecast_tempareture"><span class="value">82.4</span> &deg;f</p>
+          </article>
+
+          <article class="weather_forecast_items">
+            <h3 class="weather_forecast_day">Day</h3>
+            <img src="clear-sky.png" alt="clear sky" class="weather_forecast_icon">
+            <p class="weather_forecast_tempareture"><span class="value">82.4</span> &deg;f</p>
+          </article>
+
+          <article class="weather_forecast_items">
+            <h3 class="weather_forecast_day">Day</h3>
+            <img src="clear-sky.png" alt="clear sky" class="weather_forecast_icon">
+            <p class="weather_forecast_tempareture"><span class="value">82.4</span> &deg;f</p>
+          </article>
+
+          <article class="weather_forecast_items">
+            <h3 class="weather_forecast_day">Day</h3>
+            <img src="clear-sky.png" alt="clear sky" class="weather_forecast_icon">
+            <p class="weather_forecast_tempareture"><span class="value">82.4</span> &deg;f</p>
+          </article>
+
+        </div>
+      </div> <br> <br>
+      <div class="next_day">
+        <a href="" class="Previous">&laquo;Previous</a>
+        <a href="" class="Next">Next&raquo;;</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
